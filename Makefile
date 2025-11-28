@@ -6,7 +6,7 @@
 #    By: mchauvin <mchauvin@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/11/17 17:14:31 by mchauvin          #+#    #+#              #
-#    Updated: 2025/11/18 14:39:45 by mchauvin         ###   ########.fr        #
+#    Updated: 2025/11/27 14:03:30 by mchauvin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,7 @@ OBJS = $(SRCS:.c=.o)
 all : $(NAME)
 
 %.o:%.c
-	$(CC) $(CFLAGS) $(INC) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
 
 $(NAME):$(OBJS)
 	$(AR) $(NAME) $(OBJS) 
